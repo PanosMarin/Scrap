@@ -1,0 +1,15 @@
+mapping: 
+ C1:
+  - G1
+  - G2
+ C2:
+  - G3
+
+groups:
+ study:
+  - G1
+  - G2
+  - G3
+ control:
+  - C1
+  - C2

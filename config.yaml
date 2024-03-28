@@ -1,0 +1,5 @@
+outliar_removing:
+  method: 'IQR'
+  upper_percentile: 75
+  lower_percentile: 25
+  range: 1.5
