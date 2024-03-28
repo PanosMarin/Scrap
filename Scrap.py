@@ -53,10 +53,10 @@ class Scrap_Experiment:
             for group, data in groups.items():
                 groups[group] = self.remove_outliars(data)
 
-            study_groups = {group:groups[group] for group in plate_config['groups']['study']}
+            study_groups = {study_group:groups[study_group] for study_group in plate_config['groups']['study']}
             with open(f'{self._data_folder}/{folder}/debug/study_groups_filtered', 'w') as f:
                 f.write(str(study_groups))
-            control_groups = {group:groups[group] for group in plate_config['groups']['control']}
+            control_groups = {control_group:groups[control_group] for control_group in plate_config['groups']['control']}
             with open(f'{self._data_folder}/{folder}/debug/control_groups_filtered', 'w') as f:
                 f.write(str(control_groups))
 
